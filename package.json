@@ -1,6 +1,6 @@
 {
   "name": "@joe_six/smoothed-z-score-peak-signal-detection",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "javascript implementation of the z-score algorithm according to this: https://stackoverflow.com/questions/22583391/peak-signal-detection-in-realtime-timeseries-data/22640362#22640362",
   "keywords": [],
   "type": "module",
