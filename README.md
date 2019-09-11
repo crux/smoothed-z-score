@@ -16,6 +16,9 @@ or:
 
   $ smoothed-z-score-demo test-data.csv
 
+Also available as npm package:
+
+ $ npm i @joe_six/smoothed-z-score-peak-signal-detection
 
 have fun
 
