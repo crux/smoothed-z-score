@@ -1,0 +1,21 @@
+{
+  "name": "@joe_six/smoothed-z-score-peak-signal-detection",
+  "version": "0.0.1",
+  "description": "javascript implementation of the z-score algorithm according to this: https://stackoverflow.com/questions/22583391/peak-signal-detection-in-realtime-timeseries-data/22640362#22640362",
+  "keywords": [],
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dirk lüsebrink <dirk.luesebrink@gmail.com>",
+  "license": "MIT",
+  "directories": {
+    "test": "test"
+  },
+  "bin": {
+    "smoothed-z-score-demo": "bin/smoothed-z-score.js"
+  },
+  "dependencies": {
+    "csv-parse": "^4.4.3"
+  }
+}
