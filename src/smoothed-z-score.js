@@ -21,7 +21,7 @@ function smoothed_z_score(y, params) {
     // init cooefficients
     const lag = p.lag || 5
     const threshold = p.threshold || 3.5
-    const influence = p.influece || 0.5
+    const influence = p.influence || 0.5
 
     if(y === undefined || y.length < lag + 2) {
         throw ` ## y data array to short(${y.length}) for given lag of ${lag}`
