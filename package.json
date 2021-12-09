@@ -3,7 +3,6 @@
   "version": "0.1.1",
   "description": "javascript implementation of the z-score algorithm according to this: https://stackoverflow.com/questions/22583391/peak-signal-detection-in-realtime-timeseries-data/22640362#22640362",
   "keywords": [],
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
