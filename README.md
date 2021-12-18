@@ -32,17 +32,22 @@ smoothed-z-score-demo test-data.csv
 ```bash
 npm install --save @joe_six/smoothed-z-score-peak-signal-detection
 ```
-#### `main.js`
+![image](https://user-images.githubusercontent.com/29699356/146650700-b76bf6c5-d61c-4091-9c80-fb5e539f75a3.png)
+
+#### create a file called `main.js` and paste the following in the file
 ```javascript
-const szc = require("@joe_six/smoothed-z-score-peak-signal-detection")
+const smoothed_z_score = require("@joe_six/smoothed-z-score-peak-signal-detection")
 
 let samples = [1, 1, 1.1, 1, 0.9, 1, 1, 1.1, 1, 0.9, 1, 1.1, 1, 1, 0.9, 1, 1, 1.1, 1, 1, 1, 1, 1.1, 0.9, 1, 1.1, 1, 1, 0.9, 1, 1.1, 1, 1, 1.1, 1, 0.8, 0.9, 1, 1.2, 0.9, 1, 1, 1.1, 1.2, 1, 1.5, 1, 3, 2, 5, 3, 2, 1, 1, 1, 0.9, 1, 1, 3, 2.6, 4, 3, 3.2, 2, 1, 1, 0.8, 4, 4, 2, 2.5, 1, 1, 1]
-samples.map((sample)=> {
-    const peaks = szc.smoothed_z_score(sample, {lag: 5})// , {influence: 87})
-    console.log(peaks.length + ": " + peaks.toString())
-})
-
+const peaks = smoothed_z_score(samples, {lag: 5})// , {influence: 87})
+console.log(peaks.length + ": " + peaks.toString())
 ```
+## run the code
+```bash
+node .\main.js
+```
+![image](https://user-images.githubusercontent.com/29699356/146650686-ed8ef694-0810-4a84-9641-98376100a7c8.png)
+
 ## Enjoy!
 
 # Sudo code for the algorithm
